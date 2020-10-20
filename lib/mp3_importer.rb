@@ -10,10 +10,10 @@ class MP3Importer
   end
 
   def files
-    Dir["./spec/fixtures/**/*.mp3"]
+    Dir["./spec/fixtures/**/*.mp3"] #array with the path
   end
 
-#binding.pry
+binding.pry
 
   def import(list_of_filenames)
     list_of_filenames.each{ |filename| Song.new_by_filename(filename) }
