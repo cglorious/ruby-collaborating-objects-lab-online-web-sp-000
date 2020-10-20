@@ -8,7 +8,7 @@ class MP3Importer
   end
 
   def files
-    @files << file #how to add files in a directory
+    "./spec/fixtures" + "/**/*.mp3"
   end
 
   def import(list_of_filenames)
