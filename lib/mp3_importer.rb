@@ -16,7 +16,7 @@ class MP3Importer
 #binding.pry
 
   def import
-    './spec/fixtures'.each{ |filename| Song.new_by_filename(filename) }
+    files.each { |filename| Song.new_by_filename(filename) }
   end
 
 end
