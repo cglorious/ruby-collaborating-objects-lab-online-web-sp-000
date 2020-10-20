@@ -10,7 +10,7 @@ class MP3Importer
   end
 
   def files
-    Dir["./spec/fixtures/**/*.mp3"] #array with the path
+    Dir["./spec/fixtures/**/*.mp3"].map { |f| File.basename(f)} #array with the path
   end
 
 binding.pry
