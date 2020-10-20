@@ -1,5 +1,3 @@
-require "pry"
-
 class MP3Importer
 
   attr_accessor :path
@@ -12,8 +10,6 @@ class MP3Importer
   def files
     Dir["./spec/fixtures/**/*.mp3"].map { |f| File.basename(f)}
   end
-
-#binding.pry
 
   def import
     files.each { |filename| Song.new_by_filename(filename) }
