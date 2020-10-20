@@ -8,7 +8,7 @@ class MP3Importer
   end
 
   def files(file)
-    @files << file
+    @files << file #how to add files in a directory 
   end
 
   def import(list_of_filenames)
